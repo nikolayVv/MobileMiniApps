@@ -1,0 +1,38 @@
+﻿No.,QUESTION,ANSWER,WEIGHT,COMMENT (if grading 0 points)
+,COMPILATION,,,
+1,The code compiled from the first try,1,1,
+2,"The code did no compile initially, but was fixed with minor corrections / changes",0,-1,
+,MAIN ACTIVITY,,,
+3,"Does the app contain all three components: MainActivity, MediaPlayerService and AccelerationService?",1,1,
+4,"Does the MainActivity layout contain the commands: play, pause, stop, exit, gesturesOn and gesturesOff?",1,1,
+5,"Are the following commands executed properly through the MainActivity: play, pause and stop?",1,3,"The only problem is that when a song is playing and the user press ""Play"", it doesn’t start a  new song but it pauses the current one, but everything else is okay"
+6,Are the following commands executed properly through the MainActivity: gesturesOn and gesturesOff?,1,2,
+7,Is the following command executed properly through the MainActivity: exit?,1,1,
+8,"Does the MainActivity layout displays correct track title, duration information and progress bar (e.g., receives updates every second)?",1,1,
+9,Is the progress bar implemented using coroutines?,1,1,
+10,Does to MainActivity use a Binder to connect to the MediaPlayerService?,1,1,
+,MEDIA_PLAYER_SERVICE,,,
+11,Is the MediaPlayerService implemented as a foreground service?,1,1,
+12,"Does the MediaPlayerService notification allow the commands: play, pause, stop and exit? (it is OK if there are only three visible at a time )",1,1,
+13,"Are the following commands executed properly through MediaPlayerService notification: play, pause and stop?",1,3,
+14,"Does the MediaPlayerService notification displays correct track title and duration information (e.g., receives updates every second)?",1,2,It doesn't show the photo of the current song
+15,Is the track title and duration information equal both in the MainActivity and in the foreground notification after closing and re-opening the MainActivity? ,1,2,
+,ACCELERATION_SERVICE,,,
+16,Is the AccelerationService implemented as a Service?,1,1,
+17,Does the AccelerationService read data from the phone's Accelerometer sensor?,1,1,
+18,"Does the AccelerationService contain gesture-recognition algorithm for recognizing IDLE vs. HORIZONTAL vs. VERTICAL ? (mark 1, even if it does not function completely properly)",1,1,
+,"Using the emulator, with the app runing and MainActivity active, perform several random gestures (HORIZONTAL or VERTICAL) in a row with a few seconds pause in between.",,,
+19,"Does the gesture-recognition algorithm correctly recognize at least 50% (e.g.,  2 out of 4) of the HORIZONTAL gestures?",1,3,
+20,"Does the gesture-recognition algorithm correctly recognize at least 50% (e.g., 2 out of 4) of the VERTICAL gestures?",1,3,
+21,Does the MainActivity layout displays correct track title and the duration after each recognized gesture?,1,1,
+,GENERAL,,,
+22,Is the code sufficiently well commented in English?,1,2,
+23,"Is the following statement true (it does not include the Bonus task): ""The app did not crash at any time during testing""",1,2,
+,BONUS TASK,,,
+24,"Does the app contain code for the Bonus task (e.g., significant amount of code not required for the main part of the application)",0,2,Bonus task not implemented
+25,"Does the app allow to train a machine learning model for user-defined gesture recognition (mark 1, even if it does not function completely properly)",0,2,Bonus task not implemented
+26,"Does the app include the pre-trained model and a ""gestures.txt"" file describing the two gestures the model was trained on?",0,2,Bonus task not implemented
+27,Did the pre-trained app successfully recognize user's gestures?,0,2,Bonus task not implemented
+28,"Is the following statement true: ""The app did not crash while I was testing the Bonus task""",0,2,Bonus task not implemented
+General comments,[I like the layout of the application],,,
+,,22,,

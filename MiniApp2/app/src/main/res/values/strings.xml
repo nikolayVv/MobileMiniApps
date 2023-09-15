@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">miniapp2</string>
+    <string name="btn_start">Play</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_g_on">G-ON</string>
+    <string name="btn_g_off">G-OFF</string>
+    <string name="btn_exit">Exit</string>
+    <string name="gon">Gestures activated</string>
+    <string name="goff">Gestures deactivated</string>
+    <string name="gon_already">Gestures already activated</string>
+    <string name="goff_already">Gestures already deactivated</string>
+    <string name="track_title">Track title</string>
+    <string name="track_duration">Track Duration</string>
+    <string name="isPlaying">A song is already running</string>
+    <string name="notif_title">Hey there!</string>
+    <string name="notif_text">How are you!</string>
+    <string name="channel_name">MediaChannel</string>
+    <string name="channel_desc">A channel for running the song on the background</string>
+</resources>
