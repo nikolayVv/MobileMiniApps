@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MiniApp3</string>
+
+    <string name="splashTitle">PBD2022</string>
+    <string name="splashSubtitle">Android Mini App 3</string>
+
+    <string name="favorite">Favorite</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Search By Ingredient</string>
+    <string name="second_fragment_label">Favorites</string>
+    <string name="first_fragment_label_default">First Fragment</string>
+    <string name="second_fragment_label_default">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title">title</string>
+    <string name="ingredients_list">Ingredients list:</string>
+    <string name="measures_list">Measures list:</string>
+    <string name="default_empty">...</string>
+    <string name="instructions">Instructions:</string>
+</resources>
