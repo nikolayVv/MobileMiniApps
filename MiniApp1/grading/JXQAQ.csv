@@ -1,0 +1,41 @@
+Column1,Column2,Column3,Column4,Column5
+No.,QUESTION,ANSWER,WEIGHT,COMMENT (if grading 0 points)
+,COMPILATION (1 and 2 can’t be both true at the same time),,,
+1,The code compiled from the first try,0,1,"The code could not compile! Received error ""Plugin [id: 'com.android.application'] was not found in any of the following sources:"""
+2,"The code did no compile initially, but was fixed with some changes in the Kotlin code",0,-1,"I couldn't fix the error, because there are missing files (like settings.gradle)"
+,APP STRUCTURE,,,
+3,Does the app have one activity and three fragments?,1,1,
+4,Is the main activity of type AppCompatActivity and using a layout file named activity_main.xml?,1,1,
+5,Is the first fragment called ListFragment and does it use a layout file called fragment_list.xml?,1,1,
+6,Is the second fragment called DetailsFragment and does it use a layout file called fragment_details.xml?,1,1,
+7,Is the third fragment called NewFragment and does it use a layout file called fragment_new.xml?,1,1,
+8,Does the MainActivity upon starting the app show the ListFragment?,1,1,"Can't test if it works, but I can see that the MainActivity sets the ListFragment onCreate"
+,ListFragment - ! Add some new memos before answering questions 9-11 !,,,
+9,Does the ListFragment show a RecyclerView with a list of memos?,0,1,Can't run the app
+10,"Does each item in the RecyclerView display the photo, title and timestamp for that particular memo?",0,1,Can't run the app
+11,Does clicking on an item in the RecyclerView show the DetailsFragment?,0,1,Can't run the app
+12,"Does the ListFragment layout show a Floating Action Button with a ""+"" sign on it?",1,1,"Can't test if it works, but I can see that a FloatingAction button with a ""+"" sign on it is implemented in the fragment_list.xml"
+13,Does clicking the Floating Action Button show the NewFragment?,0,1,Can't run the app
+,DetailsFragment,,,
+14,"Does the DetailsFragment show the photo, title, description and timestamp of the memo?",0,1,Can't run the app
+15,"Does the DetailsFragment show two buttons, one for deleting the memo and one for sharing it via e-mail?",1,1,"Can't test if it works, but I can see that they are implemented in the layout fragment_details.xml"
+16,"Does clicking the Delete button perform the expected action? (Deleting the memo, returning to ListFragment and showing the list of memos without the deleted one)",0,1,Can't run the app
+17,Does clicking the Share button launch the proper intent and creates a new e-mail message?,0,1,Can't run the app
+18,Is the memo's title set as the subject of the email message?,0,1,Can't run the app
+19,Are the memo description and timestamp set as the body text of the email message?,0,1,Can't run the app
+20,Is the memo's photo added as an attachment to the email message?,0,1,Can't run the app
+21,Does sending the e-mail message work? Check this by sending the e-mail to yourself and checking if you receive it properly.,0,1,Can't run the app
+,NewFragment,,,
+22,"Does the NewFragment show an ImageView, two EditText elements, and two buttons?",1,1,"Can't test if it works, but I can see that they are implemented in the layout fragment_new.xml"
+23,Does the ImageView display by default a placeholder image which is saved as the memo's image if not picture is taken with the camera?,0,1,Can't run the app
+24,Does clicking the take picture button open the device camera?,0,1,Can't run the app
+25,"Is the picture taken with the camera immediately visible in the ImageView, replacing the placeholder image?",0,1,Can't run the app
+26,"Does clicking the save button perform as expected? (Saving the memo, returning to ListFragment and showing the list of memos including the newly added one)",0,1,Can't run the app
+,GENERAL,,,
+26,Is the code sufficiently well commented in English?,1,1,
+27,"Is the following statement true: ""The app did not crash at any time during testing""",0,1,Can't run the app
+28,Does the app use SharedPreferences?,1,1,"Can't test if it works, but shared Preferences are implemented in the code and therefore used"
+29,Is there error checking?,1,1,"Can't test if it works, but there are error checkings in the code"
+30,Are errors reported in a friendly manner?,0,1,Can't run the app
+General comments,"[I couln't run the application, because there are missing files. Anyway I gave points for these things, that I don't think need to be proved to work and can be checked only in the code.]",,,
+,,12,,

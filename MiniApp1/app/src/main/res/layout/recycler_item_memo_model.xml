@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used code from the lab session -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/memo_view"
+    android:layout_margin="5dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    app:cardBackgroundColor="#F8F8F8"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/memo_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/default_photo"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/image_description" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/memo_title"
+            android:layout_toEndOf="@+id/memo_image"
+            android:text="@string/memo_title"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/memo_timestamp"
+            android:text="@string/memo_timestamp"
+            android:layout_toEndOf="@+id/memo_image"
+            android:layout_below="@+id/memo_title" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

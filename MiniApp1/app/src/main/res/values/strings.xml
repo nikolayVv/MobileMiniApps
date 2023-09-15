@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PBD 2022 MiniApp1</string>
+    <string name="memo_title">TITLE</string>
+    <string name="image_description">Here comes the image</string>
+    <string name="fab_description">Press to create new memo</string>
+    <string name="memo_description">Here comes the description of the memo</string>
+    <string name="memo_timestamp">YYYY-MM-DD HH:MM:SS</string>
+    <string name="delete_btn_text">Delete</string>
+    <string name="share_btn_text">Share</string>
+    <string name="photo_btn_text">Take photo</string>
+    <string name="save_btn_text">Save</string>
+    <string name="memo_title_new">Title goes here...</string>
+    <string name="memo_description_new">Type description here...</string>
+</resources>
